@@ -1,24 +1,26 @@
-CREATE TABLE dim_date (
-  date_id DATE PRIMARY KEY,
-  month INT,
-  year INT
-);
+INSERT INTO dim_date VALUES
+('2023-01-01',1,2023),
+('2023-02-01',2,2023),
+('2023-03-01',3,2023);
 
-CREATE TABLE dim_store (
-  store_id INT PRIMARY KEY,
-  store_name VARCHAR(50)
-);
+INSERT INTO dim_store VALUES
+(1,'Store A'),
+(2,'Store B'),
+(3,'Store C');
 
-CREATE TABLE dim_product (
-  product_id INT PRIMARY KEY,
-  category VARCHAR(50)
-);
+INSERT INTO dim_product VALUES
+(1,'Electronics'),
+(2,'Clothing'),
+(3,'Groceries');
 
-CREATE TABLE fact_sales (
-  sale_id INT PRIMARY KEY,
-  date_id DATE,
-  store_id INT,
-  product_id INT,
-  revenue DECIMAL(10,2),
-  quantity INT
-);
+INSERT INTO fact_sales VALUES
+(1,'2023-01-01',1,1,5000,2),
+(2,'2023-01-01',2,2,3000,1),
+(3,'2023-02-01',1,3,2000,4),
+(4,'2023-02-01',3,1,7000,3),
+(5,'2023-03-01',2,2,4000,2),
+(6,'2023-03-01',3,3,1500,5),
+(7,'2023-01-01',1,2,2500,1),
+(8,'2023-02-01',2,1,8000,2),
+(9,'2023-03-01',3,2,3500,3),
+(10,'2023-03-01',1,3,1000,2);
