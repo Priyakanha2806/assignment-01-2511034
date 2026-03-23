@@ -20,35 +20,4 @@ A key trade-off in this architecture is increased system complexity due to the u
 
 However, this complexity is justified by the scalability and flexibility it provides. The system can handle structured, unstructured, and real-time data efficiently while supporting advanced analytics and AI capabilities. This trade-off can be mitigated by using automated data pipelines, monitoring systems, and well-defined data governance practices to ensure smooth operation.
 
-[ICU Devices / Sensors]
-          ↓
-   [Streaming (Kafka)]
-          ↓
-      [Data Lake]
-          ↓
-   [ETL / Processing]
-          ↓
-    [Data Warehouse]
-          ↓
-     [BI Dashboard]
 
------------------------------------
-
-[Doctors / Hospital App]
-          ↓
-      [OLTP DB]
-          ↓
-      [Data Warehouse]
-
------------------------------------
-
-[Patient Records / Documents]
-          ↓
-      [Vector DB]
-          ↓
-   [Semantic Search UI]
-
------------------------------------
-
-         [ML Model]
-   (Readmission Prediction)
