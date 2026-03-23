@@ -1,3 +1,5 @@
+-- Sample Data Inserts
+
 INSERT INTO dim_date VALUES
 ('2023-01-01',1,2023),
 ('2023-02-01',2,2023),
