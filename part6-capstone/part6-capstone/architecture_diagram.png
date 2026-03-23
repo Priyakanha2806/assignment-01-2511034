@@ -1,0 +1,32 @@
+[ICU Devices / Sensors]
+          ↓
+   [Streaming (Kafka)]
+          ↓
+      [Data Lake]
+          ↓
+   [ETL / Processing]
+          ↓
+    [Data Warehouse]
+          ↓
+     [BI Dashboard]
+
+-----------------------------------
+
+[Doctors / Hospital App]
+          ↓
+      [OLTP DB]
+          ↓
+      [Data Warehouse]
+
+-----------------------------------
+
+[Patient Records / Documents]
+          ↓
+      [Vector DB]
+          ↓
+   [Semantic Search UI]
+
+-----------------------------------
+
+         [ML Model]
+   (Readmission Prediction)
