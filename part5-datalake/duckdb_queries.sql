@@ -1,3 +1,4 @@
+-- Note: Join assumed due to missing direct key between datasets
 -- Q1:
 SELECT c.customer_id, COUNT(o.order_id)
 FROM read_csv_auto('customers.csv') c
